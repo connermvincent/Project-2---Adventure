@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Fantasy Tiles</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <audio id="potionSound">
+        <source src="sound/bubble.wav" type="audio/wav">
+    </audio>
+    <audio id="monsterSound">
+        <source id="monsterSound" src="sound/slime9.wav" type="audio/wav">
+    </audio>
+    <audio id="victorySound">
+        <source id="victorySound" src="sound/orchestra.wav" type="audio/wav">
+    </audio>
+	<section id="introScreen">
+		<h1 id="introHeader">Escape from the Ancient Dungeon of Mystery</h1>
+		<p id="introText">After a long dungeon expedition, all your equipment was destroyed by a random acid trap! Escape back to the surface and live to fight another day! 
+        <br><br>
+        Move with the arrow keys and wait a turn with the spacebar. If the monster catches you it will hurt you, and a new monster will appear. Reach the stairs up before you run out of life to escape!</p>
+		<div>
+			<button id="start">Start</button>
+		</div>
+	</section>
+
+	<section id="gameScreen">
+        <div id="gameUI">
+            <span id="gameOutput">You are in a dark and mysterious dungeon.</span>
+            <span id="healthTag">Health: </span> <div id="healthBar"></div>
+        </div>
+		<canvas id="gameCanvas" width="512" height="512"></canvas>
+	</section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="script/logic.js"></script>
+</body>
+</html>
